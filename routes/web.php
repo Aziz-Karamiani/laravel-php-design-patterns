@@ -18,7 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 Route::prefix('solid')->group(function () {
     Route::get('/srp', [SolidController::class, 'srp']);
 });

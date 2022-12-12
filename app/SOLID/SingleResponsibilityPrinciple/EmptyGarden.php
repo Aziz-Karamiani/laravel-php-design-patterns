@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\SOLID\SingleResponsibilityPrinciple;
 
 /*
@@ -11,12 +10,14 @@ namespace App\SOLID\SingleResponsibilityPrinciple;
 class EmptyGarden
 {
     public int $width;
+
     public int $height;
 
     /**
      * EmptyGarden constructor.
-     * @param int $width
-     * @param int $height
+     *
+     * @param  int  $width
+     * @param  int  $height
      */
     public function __construct(int $width, int $height)
     {
@@ -24,13 +25,13 @@ class EmptyGarden
         $this->height = $height;
     }
 
-
     /**
      * @return array
      */
     public function getItems()
     {
         $numberOfSpots = ceil($this->width * $this->height);
+
         return array_fill(0, $numberOfSpots, 'handful of dirt');
     }
 }
