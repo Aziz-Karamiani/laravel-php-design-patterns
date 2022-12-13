@@ -20,4 +20,5 @@ Route::get('/', function () {
 
 Route::prefix('solid')->group(function () {
     Route::get('/srp', [SolidController::class, 'srp']);
+    Route::get('/ocp', [SolidController::class, 'ocp']);
 });
