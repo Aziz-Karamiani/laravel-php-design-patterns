@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\SOLID\OpenClosedPrinciple;
-
 
 use App\SOLID\SingleResponsibilityPrinciple\EmptyGarden;
 
